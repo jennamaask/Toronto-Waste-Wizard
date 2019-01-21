@@ -103,11 +103,11 @@ p.name {
 .description {
 	width: 50%;
 	padding: 10px;
+	font-size: 1.6rem;
 }
 
 .description p {
 	font-size: 1.6rem;
-	padding-left: 40px;
 }
 
 ul {
