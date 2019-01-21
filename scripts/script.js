@@ -56,7 +56,6 @@ const getFavourite = function(){
 	$('.star').on("click", function() {		
 		let clickedClass = this.getAttribute('class');	
 		let individualClass = $(this).next().text().replace(/\s+/g, '').replace(/\(|\)/g, '');
-		console.log(individualClass);
 		if(clickedClass == "star green") {
 			$(this).attr('class', 'star');
 			let remove = $('.favourites').find(`.${individualClass}`).remove();
@@ -79,7 +78,6 @@ const getFavourite = function(){
 const watchFavourites = function() {
 	$('.favourites').on('click', '.star', function() {
 		let clickedClass = $(this).next().text().replace(/\s+/g, '').replace(/\(|\)/g, '');
-		console.log(clickedClass);
 		$(this).parent('div').parent('div').remove();
 		$('.results').find(`.${clickedClass}`).find('.star').attr('class', 'star');
 		if($('.favourites').find('.resultItem').length == 0){
