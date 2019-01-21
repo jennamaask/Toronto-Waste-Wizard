@@ -105,6 +105,11 @@ p.name {
 	padding: 10px;
 }
 
+.description p {
+	font-size: 1.6rem;
+	padding-left: 40px;
+}
+
 ul {
 	margin: 0;
 }
